@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-struct FruitApp: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct FruitApp_Previews: PreviewProvider {
-    static var previews: some View {
-        FruitApp()
+@main
+struct FruitApp: App {
+    var body: some Scene {
+        WindowGroup {
+            OnboardingView()
+        }
     }
 }
